@@ -199,7 +199,3 @@ def main():
         FPSCLOCK.tick(10)
 
 if __name__=='__main__':
-    main()
-
-
-#ニュース？良いニュースがきたら、確変boom悪いなら確変recession
