@@ -116,6 +116,7 @@ def sellaction(current):
 def drawgameover():
     SURFACE.blit(sysfont3.render("BANKRUPTCY",True,colors[7],colors[5]),(230,260))
 
+
 def main():
     global account,boom,recession,bubble,tradingprice,turn,framecount,sell,buy
     points=[]
