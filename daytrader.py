@@ -1,4 +1,3 @@
-#18.12.2020~
 import sys
 from random import randint 
 import pygame
@@ -8,19 +7,19 @@ pygame.init()
 pygame.key.set_repeat(5,5)
 SURFACE=pygame.display.set_mode((800,600))
 FPSCLOCK=pygame.time.Clock()
-sysfont=pygame.font.SysFont(None,30)#残高と現在値の文字
-sysfont2=pygame.font.SysFont(None,20)#目盛りの文字
-sysfont3=pygame.font.SysFont(None,70)#企業名の文字
+sysfont=pygame.font.SysFont(None,30)
+sysfont2=pygame.font.SysFont(None,20)
+sysfont3=pygame.font.SysFont(None,70)
 stock=100
-max=10#画面内最大個数（リストの要素数
+max=10
 account=1000000
-colors=[(100,100,100),(200,200,200),(200,50,50),(50,50,200),(255,255,255),(0,0,0),(0,255,50),(50,50,50)]#灰、枠線灰、買い赤、売り赤、白、黒、緑
+colors=[(100,100,100),(200,200,200),(200,50,50),(50,50,200),(255,255,255),(0,0,0),(0,255,50),(50,50,50)]
 boom=True
 recession=False
 bubble=False
 tradingprice=0
 
-class Button:#pythonのクラスは大文字
+class Button:
     def __init__(self,name,rect,color,ispressed):
         self.name=name
         self.rect=rect
@@ -32,24 +31,23 @@ class Button:#pythonのクラスは大文字
         pygame.draw.rect(SURFACE,self.color,self.rect)
         if self.ispressed:
             pygame.draw.rect(SURFACE,colors[0],self.rect)
-        pygame.draw.rect(SURFACE,colors[1],self.rect,3)#枠線
+        pygame.draw.rect(SURFACE,colors[1],self.rect,3)
         SURFACE.blit(sysfont.render("{}".format(self.name),True,(colors[1])),(self.rect.left+self.rect.width/2-45/2,self.rect.top+self.rect.height/2-15/2))
         
     def click(self,pos,theother,current):
         if self.rect.collidepoint(pos) and self.handler:
             self.handler(current)
     
-def draw(current,account,buy,sell):#緑線以外の描画の関数
+def draw(current,account,buy,sell):
     global tradingprice
     SURFACE.fill(colors[5])
     gap=current%100
-    upperline=current-gap+300#真ん中の目盛りの数値に300を足した一番上の目盛りの数値
+    upperline=current-gap+300
     for i in range(0,600,100):
         if upperline-i>=0:
             pygame.draw.line(SURFACE,colors[7],(0,i+gap),(800,i+gap),1)
-            SURFACE.blit(sysfont2.render("{}".format((upperline-i)*stock),True,colors[4],colors[5]),(10,i+gap-5))# -5は補正
+            SURFACE.blit(sysfont2.render("{}".format((upperline-i)*stock),True,colors[4],colors[5]),(10,i+gap-5))
     SURFACE.blit(sysfont.render("{}".format(current*stock),True,colors[6],colors[5]),(540,310))
-    #SURFACE.blit(sysfont2.render("[ stock:100 ]",True,colors[4],colors[5]),(270,70))
     SURFACE.blit(sysfont.render(" Account: {} ".format(account),True,colors[4],colors[5]),(550,65))
     SURFACE.blit(sysfont3.render("FTC Inc.",True,colors[4],colors[5]),(70,40))
     if buy.ispressed or sell.ispressed:
@@ -64,7 +62,7 @@ def draw(current,account,buy,sell):#緑線以外の描画の関数
             SURFACE.blit(sysfont.render("({})".format(Return),True,colors[3],colors[5]),(675,105))
     buy.paint()
     sell.paint()
-def drawchart(points):#緑線の描画関数
+def drawchart(points):
     global max
     for j in range (max):
         if j != max-1:
@@ -76,7 +74,7 @@ def buyaction(current):
     if sell.ispressed:
         tradingprice=0
         sell.ispressed=False
-        account-=stock*current#currentはglobal
+        account-=stock*current
         boom=True
         recession=False
     else:
@@ -124,8 +122,8 @@ def main():
     game_over=False
     next=None
     mousepos=[]
-    cg=0#current gap
-    gs=0 #gap sum
+    cg=0
+    gs=0
     price=10000
     framecount=0
     turn=0
@@ -134,7 +132,7 @@ def main():
     buy.handler = buyaction
     sell=Button("Sell",Rect(600,500,200,100),colors[3],False)
     sell.handler = sellaction
-    for point in range(max):#maxはその瞬間のグラフの点の個数
+    for point in range(max):
         points.append(Rect(point*60,randint(1300,1500),0,0))
     cg=points[-1].top-300
     points=[x.move(0,-cg) for x in points]
@@ -153,7 +151,7 @@ def main():
                 sell.click(event.pos,buy,current)
                   
         if not game_over and framecount%13==0:
-            if framecount//13==turn+changedframe:#しばらく（turn回）経ったら、確率次第で景気が逆転するif文
+            if framecount//13==turn+changedframe:
                 if bubble:
                     bubble=False
                     boom=True
@@ -162,24 +160,24 @@ def main():
                     boom = not boom
                     recession = not recession
                     turn=randint(1,10)
-                if randint(1,20)==7:#5%の確率で確変モードbubble
+                if randint(1,20)==7:
                     bubble=True
                     boom=False
                     recession=False
                     turn=randint(12,20)
                 changedframe=framecount//13
             if boom:
-                if randint(1,5)==1: #1/5の確率でしか下落しない
+                if randint(1,5)==1:
                     next=randint(current-20,current)
                 else:
                     next=randint(current,current+80)
             elif recession:
-                if randint(1,5)==1: #1/5の確率でしか上昇しない
+                if randint(1,5)==1:
                     next=randint(current,current+20)
                 else:
                     next=randint(current-80,current)
             elif bubble:
-                if randint(1,5)==1: #1/5の確率でしか下落しない
+                if randint(1,5)==1:
                     next=randint(current-20,current)
                 else:
                     next=randint(current,current+800)
