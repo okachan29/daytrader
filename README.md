@@ -4,6 +4,7 @@
 
 ## Getting started
 To get this game started you have to install pygame, the free library of Python.
+
 Below is the instruction how to install pygame in your device.
 1. install python
 1. install pygame
