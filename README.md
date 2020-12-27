@@ -10,9 +10,24 @@ Below is the instruction how to install pygame in your device.
 1. install python
     1. Download python from [Python](https://www.python.org/downloads/).
     1. Open Terminal (or command prompt if you use Windows).
-    1. You can check if its already downloaded by below code.
+    1. You can check if its already downloaded by below code. If its downloaded you will see the version you installed.
+    ~~~
+    python --version
+    ~~~
+1. install pygame library
+    1. Install pygame by this code.
+    ~~~
+    python -m pip install pygame
+    ~~~
+    1. Run below code, separately to check you have installed. If installed you will see the version you installed.
+    ~~~
+    python
+    ~~~
     
-    ~~~ python --version ~~~
+    ~~~
+    import pygame
+    ~~~
+    
 ##
 ### Install python
 
