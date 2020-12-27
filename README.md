@@ -37,7 +37,6 @@ Below is the instruction how to install pygame in your device.
 1. 
 
 
-##
 ## How to play
 You can Buy the stock by the price at the moment, if you have bucks to pay. You can earn some return if the stok price get higher than the price you traded. You may lost if the price get lower. You can also do the short selling. Your **balance in your bank account** is in the right top of your screen.Once you buy or sell the stock, you are able to see the **price you traded** and the **current return price** in your screen.
 
@@ -86,12 +85,11 @@ First game I made in my whole life.
     ~~~
     import pygame
     ~~~
-    無事pygameがインストールされました、これからあなたもpygameを使った作品を作ることができます！
+    無事pygameがインストールされました、今後pygameがつかえるようになりました！
     
 1. 
 
 
-##
 ## How to play
 もし口座にお金があれば、その時の株価でこの企業の株を購入することができます。買った株の株価が上昇したら利益があり下降してしまうと損をします。買うだけでなく、空売りによるトレードも可能です。画面右上にはあなたの現在の**口座残高**が、取引をしているときは、**取引額**、**今の利益（損失)** も画面に表示されるようになっています。
 
