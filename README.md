@@ -41,7 +41,7 @@ You can Buy the stock by the price at the moment, if you have bucks to pay. You 
 
 
 
-This stock price would possobly chang by your trade, that you are one of the biggest stockholder of this company. You have to help this company by buying its stock while the company is in adifficult situation. If the price fall to 0, you lose. 
+This stock price would chang by your trade, that you are one of the biggest stockholder of this company. You have to help this company by buying its stock while the company is in a difficult situation.Cut loss and try to change the trend and make it yours. If the price fall to 0 or get bunkrupty you will lose. 
 
 <img width="500" alt="daytradercaption3" src="https://user-images.githubusercontent.com/75876484/103171392-3c0de980-488f-11eb-9f64-98015eefea0e.png">
 
