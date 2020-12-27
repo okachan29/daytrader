@@ -1,5 +1,7 @@
 # daytrader game
 English (Japanese translation in below / 日本語版が下の方にあります)
+
+
 The trading game with a simple code written in python.
 
 
@@ -52,7 +54,10 @@ First game I made in my whole life.
 ---
 
 # daytrader game
+
 Japanese
+
+
 株のデイトレーダーを模した簡単なゲームをpythonで書きました。
 
 <img width="500" alt="daytradercaption1" src="https://user-images.githubusercontent.com/75876484/103157065-c5bba980-47f2-11eb-9e0c-81fd6094c924.png">
