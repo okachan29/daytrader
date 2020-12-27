@@ -70,7 +70,7 @@ def drawchart(points):
             point2=(points[j+1].left,600-points[j+1].top)
             pygame.draw.line(SURFACE,colors[6],point1,point2)    
 def buyaction(current):
-    global account,boom,recession,tradingprice,framecount,sell,buy
+    global account,boom,recession,tradingprice,framecount,sell,buy,changedframe
     if sell.ispressed:
         tradingprice=0
         sell.ispressed=False
@@ -91,7 +91,7 @@ def buyaction(current):
             account-=current*stock
             tradingprice=current*stock
 def sellaction(current):
-    global account,boom,recession,tradingprice,turn,framecount,sell,buy
+    global account,boom,recession,tradingprice,turn,framecount,sell,buy,changedframe
     if buy.ispressed:
             buy.ispressed=False
             account+=stock*current
@@ -126,7 +126,7 @@ def main():
     gs=0
     price=10000
     framecount=0
-    turn=0
+    turn=randint(5,12)
     changedframe=0
     buy=Button("Buy",Rect(400,500,200,100),colors[2],False)
     buy.handler = buyaction
@@ -156,7 +156,7 @@ def main():
                     bubble=False
                     boom=True
                     recession=False
-                if randint(1,2)==2:
+                if randint(1,4)==2:
                     boom = not boom
                     recession = not recession
                     turn=randint(1,10)
