@@ -8,10 +8,11 @@ To get this game started you have to install pygame, the free library of Python.
 
 Below is the instruction how to install pygame in your device.
 1. install python
-  1. Download python from [Python](https://www.python.org/downloads/).
-  1. Open Terminal (or command prompt if you use Windows).
-  1. You can check if its already downloaded by below code.
-  '''python --version'''
+    1. Download python from [Python](https://www.python.org/downloads/).
+    1. Open Terminal (or command prompt if you use Windows).
+    1. You can check if its already downloaded by below code.
+    
+    ~~~ python --version ~~~
 ##
 ### Install python
 
