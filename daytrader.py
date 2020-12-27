@@ -112,7 +112,7 @@ def sellaction(current):
         tradingprice=current*stock
         account+=current*stock
 def drawgameover():
-    SURFACE.blit(sysfont3.render("BANKRUPTCY",True,colors[7],colors[5]),(230,260))
+    SURFACE.blit(sysfont3.render("GAMEOVER",True,colors[7],colors[5]),(230,260))
 
 
 
@@ -188,8 +188,9 @@ def main():
             gs+=cg
             points=[x.move(-600/max,-cg) for x in points]  
             current=gs+300
-        if current<=0:
+        if current<=0 or account<=0:
             game_over=True
+            drawgameover()
         else:
             draw(current,account,buy,sell)
             drawchart(points)
