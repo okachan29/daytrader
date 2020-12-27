@@ -1,5 +1,6 @@
 # daytrader
-### The trading game with a simple code written in python.
+The trading game with a simple code written in python.
+
 <img width="500" alt="daytradercaption1" src="https://user-images.githubusercontent.com/75876484/103157065-c5bba980-47f2-11eb-9e0c-81fd6094c924.png">
 
 ## Getting started
@@ -7,8 +8,10 @@ To get this game started you have to install pygame, the free library of Python.
 
 Below is the instruction how to install pygame in your device.
 1. install python
-1. install pygame
-1. play
+  1. Download python from [Python](https://www.python.org/downloads/).
+  1. Open Terminal (or command prompt if you use Windows).
+  1. You can check if its already downloaded by below code.
+  '''python --version'''
 ##
 ### Install python
 
