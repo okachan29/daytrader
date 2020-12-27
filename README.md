@@ -35,7 +35,10 @@ Below is the instruction how to install pygame in your device.
 
 ##
 ## How to play
-You can Buy the stock by the price at the moment, if you have bucks to pay. You can earn some return if the stok price get higher than the price you traded. You may lost if the price get lower. You can also do the short selling.
+You can Buy the stock by the price at the moment, if you have bucks to pay. You can earn some return if the stok price get higher than the price you traded. You may lost if the price get lower. You can also do the short selling. Your **balance in your bank account** is in the right top of your screen.Once you buy or sell the stock, you are able to see the **price you traded** and the **current return price** in your screen.
+
+
+
 This stock price may chang by your trade, that you are one of the biggest stockholder of this company. You have to help this company by buying its stock while the company is in adifficult situation. If the price fall to 0, you lose. 
 
 
