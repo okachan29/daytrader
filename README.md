@@ -1,4 +1,4 @@
-# daytrader
+# daytrader game
 The trading game with a simple code written in python.
 
 <img width="500" alt="daytradercaption1" src="https://user-images.githubusercontent.com/75876484/103157065-c5bba980-47f2-11eb-9e0c-81fd6094c924.png">
@@ -7,14 +7,15 @@ The trading game with a simple code written in python.
 To get this game started you have to install pygame, the free library of Python.
 
 Below is the instruction how to install pygame in your device.
-1. install python
-    1. Download python from [Python](https://www.python.org/downloads/).
+1. Install python
+    1. Download python from [Python Homepage](https://www.python.org/downloads/).
     1. Open Terminal (or command prompt if you use Windows).
     1. You can check if its already downloaded by below code. If its downloaded you will see the version you installed.
     ~~~
     python --version
     ~~~
-1. install pygame library
+    
+1. Install pygame library
     1. Install pygame by this code.
     ~~~
     python -m pip install pygame
@@ -27,12 +28,12 @@ Below is the instruction how to install pygame in your device.
     ~~~
     import pygame
     ~~~
-    From now, you are able to plya with some existing game of pygame, and also create new game with pygamelibrary.
+    From now, you are able to play with some existing game of pygame, and also create new game by using pygame.
+    
+1. 
+
+
 ##
-### Install python
-
-
-
 ## How to play
 You can Buy the stock by the price at the moment, if you have bucks to pay. You can earn some return if the stok price get higher than the price you traded. You may lost if the price get lower. You can also do the short selling.
 This stock price may chang by your trade, that you are one of the biggest stockholder of this company. You have to help this company by buying its stock while the company is in adifficult situation. If the price fall to 0, you lose. 
