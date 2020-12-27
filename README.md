@@ -4,3 +4,4 @@
 
 ## How to play
 You can Buy your stock by the price at the moment, if you have bucks to pay. You can earn some return if the stok price get higher than the price you traded. You may lost if the price get lower. You can also do the short selling.
+This stock price may chang by your trade, that you are one of the biggest stockholder of this company. You have to help this company by buying its stock while the company is in adifficult situation. If the price fall to 0, you lose. 
