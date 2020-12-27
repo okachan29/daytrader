@@ -10,7 +10,7 @@ Below is the instruction how to install pygame in your device.
 1. install pygame
 1. play
 
-
+***
 
 ### Install python
 
