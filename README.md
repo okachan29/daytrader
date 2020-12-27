@@ -19,7 +19,7 @@ Below is the instruction how to install pygame in your device.
     ~~~
     python -m pip install pygame
     ~~~
-    1. Run below code, separately to check you have installed. If installed you will see the version you installed.
+    1. Run below code separately to check you have installed. If its installed you will see the version you installed.
     ~~~
     python
     ~~~
@@ -27,7 +27,7 @@ Below is the instruction how to install pygame in your device.
     ~~~
     import pygame
     ~~~
-    
+    From now, you are able to plya with some existing game of pygame, and also create new game with pygamelibrary.
 ##
 ### Install python
 
