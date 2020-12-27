@@ -1,5 +1,5 @@
-# daytrader game
-English (Japanese translation in below / 日本語版が下の方にあります)
+# Daytrader game
+> English *(Japanese translation in below / 日本語版が下の方にあります)*
 
 
 The trading game with a simple code written in python.
@@ -53,9 +53,9 @@ First game I made in my whole life.
 
 ---
 
-# daytrader game
+# Daytrader game
 
-Japanese
+> Japanese
 
 
 株のデイトレーダーを模した簡単なゲームをpythonで書きました。
@@ -93,7 +93,7 @@ Japanese
 
 ##
 ## How to play
-もし口座にお金があれば、その時の株価でこの企業の株を購入することができます。買った株の株価が上昇したら利益があり下降してしまうと損をします。買うだけでなく、空売りによるトレードも可能です。画面右上にはあなたの現在の**口座残高**が、取引をしているときは、**取引額**、**今の利益（損失）**も画面に表示されるようになっています。
+もし口座にお金があれば、その時の株価でこの企業の株を購入することができます。買った株の株価が上昇したら利益があり下降してしまうと損をします。買うだけでなく、空売りによるトレードも可能です。画面右上にはあなたの現在の**口座残高**が、取引をしているときは、**取引額**、**今の利益（損失)** も画面に表示されるようになっています。
 
 <img width="500" alt="daytradercaption2" src="https://user-images.githubusercontent.com/75876484/103171020-1f23e700-488c-11eb-9065-b4b650cfb32b.png">
 
