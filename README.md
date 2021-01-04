@@ -34,7 +34,7 @@ Below is the instruction how to install pygame in your device.
     ~~~
     From now, you are able to play with some existing game of pygame, and also create new game by using pygame.
     
-1. 
+1. Download daytrader.py and make it run
 
 
 ## How to play
@@ -87,7 +87,7 @@ First game I made in my whole life.
     ~~~
     無事pygameがインストールされました、今後pygameがつかえるようになりました！
     
-1. 
+1. daytrader.pyファイルをダウンロードして、実行してください
 
 
 ## How to play
