@@ -101,4 +101,3 @@ First game I made in my whole life.
 
 
 
-初めて作ったゲームです
